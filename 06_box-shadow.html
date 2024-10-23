@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box-shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .box{
+            background-color: coral;
+            padding: 1rem;
+            margin: 2rem;
+            /* offset-x |  offset-y | color; */
+            box-shadow: 10px 10px teal;
+
+             /* offset-x |  offset-y | blur-radius| color; */
+              box-shadow: 10px 10px 10px teal;
+
+              /* valores negativos */
+              box-shadow: -5px -5px 10px red;
+
+               /* offset-x |  offset-y | blur-radius| spread-radius | color; */
+
+                box-shadow: 10px 10px 10px 6px teal;
+
+                 /*  inset | offset-x |  offset-y | color; */
+                 box-shadow: inset -5px -5px 10px 2px red;
+                 /* multiples sombras */
+                 box-shadow: 10px 10px red, -10px -10px greenyellow;
+
+
+
+
+
+
+
+
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="box">
+      <h3>Título</h3>
+      <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa enim animi totam. Non dignissimos facilis ducimus sunt, libero vitae repudiandae tempora odio beatae ipsam dicta quos ullam? Architecto, quidem!
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Título</h3>
+      <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente dolorum asperiores debitis, id molestiae. Atque maiores sed, perspiciatis placeat qui officiis iure excepturi a beatae eveniet sint, eaque ab.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Título</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod error sit
+        voluptatem voluptate, possimus dignissimos vero quas pariatur porro
+        explicabo! Enim est cum reprehenderit dicta tempore tenetur nobis nihil
+        mollitia?
+      </p>
+    </div>
+  </body>
+</html>
