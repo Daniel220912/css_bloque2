@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template Areas</title>
+    <style>
+    
+      .header,
+      .content,
+      .sidebar,
+      .box1,
+      .box2,
+      .box3,
+      footer {
+        border: 2px black solid;
+        padding: 0.5rem;
+      }
+
+      .container{
+        max-width: 960px;
+        margin:  0 auto;
+        display: grid;
+        grid-template-areas: "header header header header"
+        "content content content sidebar"
+        "box1 box2 box2 sidebar"
+        "box3 box3 box3 sidebar"
+        "footer footer footer footer"; 
+        gap: 1rem;
+      }
+
+      .header{
+        grid-area: header;
+        text-align: center; 
+      }
+
+      .content{
+        grid-area: content;
+      }
+
+      .sidebar{
+        grid-area: sidebar;
+      }
+
+      .box1{
+        grid-area: box1;
+      }
+
+      .box2{
+        grid-area: box2;
+      }
+
+      .box3{
+        grid-area: box3;
+      }
+
+      footer{
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>Titulo de la pagina</h1></header>
+
+      <section class="content">
+        <h3>Hello from grid layout</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, cum
+          recusandae? Ex necessitatibus omnis, voluptate exercitationem delectus
+          quia? Placeat recusandae expedita doloribus incidunt. Non tenetur
+          dolores quibusdam commodi dolore sapiente!
+        </p>
+      </section>
+
+      <aside class="sidebar">
+        <h3>Contacta con nosotros</h3>
+        <ul>
+          <li>Hola</li>
+          <li>Adios</li>
+          <li>Buenas</li>
+          <li>Malas</li>
+        </ul>
+      </aside>
+      <div class="box1">
+        <h3>Box-1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a
+          possimus doloremque nesciunt non voluptate voluptas sequi expedita,
+          incidunt facere asperiores exercitationem sunt omnis eius temporibus
+          perferendis. Porro, id inventore.
+        </p>
+      </div>
+
+      <div class="box2">
+        <h3>Box-2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a
+          possimus doloremque nesciunt non voluptate voluptas sequi expedita,
+          incidunt facere asperiores exercitationem sunt omnis eius temporibus
+          perferendis. Porro, id inventore.
+        </p>
+      </div>
+
+      <div class="box3">
+        <h3>Box-3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a
+          possimus doloremque nesciunt non voluptate voluptas sequi expedita,
+          incidunt facere asperiores exercitationem sunt omnis eius temporibus
+          perferendis. Porro, id inventore.
+        </p>
+      </div>
+    
+    <footer class="footer">
+      <p>Copyright &copy; 2024</p>
+    </footer>
+</div>
+  </body>
+</html>

@@ -6,10 +6,14 @@
     <title>Grid columns</title>
     <style>
         .grid-container{
+
+     
+
+
             display: grid;
-            /* grid-template-columns: 100px 300px ; */
-            /* grid-template-columns: 1fr 3fr 1fr 4fr; */
-            grid-template-columns: repeat(6,auto) ;
+            grid-template-columns: 100px 300px ; */
+            grid-template-columns: 1fr 3fr 1fr 4fr;
+           grid-template-columns: repeat(6,auto) ;
             gap: 1rem;
 
             
@@ -21,7 +25,16 @@
             text-align: center;
             font-size: 1.6rem;
             font-weight: bold;
+        }
 
+        .item:first-child{
+            background-color: brown;
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
         }
 
         main{
